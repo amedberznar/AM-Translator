@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>AM translator</title>
+
+  <script>
+    // JavaScript code
+    function search_Word() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('Word');
+
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display = "none";
+        } else {
+          x[i].style.display = "block";
+        }
+      }
+    }
+  </script>
+
+
+</head>
+
+<!-- NOTE:A (Audio) -->
+<script>
+  const able = new Audio();
+  able.src = "A/able.mp3";
+</script>
+<script>
+  const african = new Audio();
+  african.src = "A/african.mp3";
+</script>
+
+<body>
+
+  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+  <center>
+    <img src="images/AM.jpg" alt="">
+    <a href="Amed.html">
+      <h2>Developed By</h2>
+    </a>
+    <div class="square-layout">
+      <!-- input tag -->
+      <p>Translator</p>
+      <input id="searchbar" onkeyup="search_Word()" type="text" name="search" placeholder="Search Word..">
+
+
+      <div id="list">
+
+        <!-- NOTE:                        ( A )              -->
+
+        <li class="Word"><span onclick='responsiveVoice.speak("Abel");'>Abel</span> <span onclick="able.play();"> (هابیل: کورێ دوویێ ئادەم و حەوایێ) </span></li>
+        <li class="Word"><span onclick='responsiveVoice.speak("African");'>African</span> <span onclick="african.play();">ئەفریقی ( گەل، زمان، کلتور ) </span></li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Afrikaner");'>Afrikaner</span> هاولاتیەکێ ئەفریقی بەلێ ڕەچەڵەک ( جنس ) ئەوروپی</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Algerian");'>Algerian</span> جەزائیری ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("American");'>American</span> ئەمریکی ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Americanism");'>Americanism</span> (ئەمریکێتی، خوو و نەریت یا بیروباوەڕەکێ ئەمریکی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Americanization");'>Americanization</span> (خو گرتنا رەوشتێن ئەمریکی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Americanize");'>Americanize</span> (کرنە ئەمریکی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglican");'>Anglican</span> تایبەتە ب ئینگڵتەرا ( گەل، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglicanism");'>Anglicanism</span> (بیروباوەڕ و ڕێبازا کڵێسا ئەنگلیکانێ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglicism");'>Anglicism</span> (ئاخفتن، پەیڤ یان زاراڤەکێ تایبەت ب زمانێ ئینگلیزی ڤە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglophile");'>Anglophile</span> (دۆستێ ئینگلیز و ئینگڵتەرا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglophobe");'>Anglophobe</span> (کەسەک کو کەرب ژ ئینگلیز و ئینگڵتەرا ڤەببن)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Anglophobia");'>Anglophobia</span> (ترس و کەرب ژێڤەبینا ئینگلیز و ئینگڵتەرا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aphrodite");'>Aphrodite</span> (جۆرە پەلاتینکەکە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Apollo");'>Apollo</span> (کورەکێ جوان)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Arabian");'>Arabian</span> (عەرەبی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Arabic");'>Arabic</span> (زمانێ عەرەبی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aristotelian");'>Aristotelian </span>(ئەرستۆیی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aristotle");'>Aristotle </span>(ئەرستۆ : فەیلەسوفەکێ کەڤنێ یۆنانییە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Armageddon");'>Armageddon</span> (جەنگەکێ مەزنێ ئێکلایکەرەڤە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Armenian");'>Armenian</span> ئەرمەنی ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aryan");'>Aryan</span> تایبەت ب زمانێ هندۆ - ئەوروپی ( لقا هندی - ئیرانی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Asiatic");'>Asiatic </span>(خەڵکێ ئاسیا، ئاسیاوی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Assyrian");'>Assyrian </span>ئاشوری ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Athena");'>Athena </span>ئەسینا: خوداوەندێ حیکمەت و هونەرێ ل ( ئەفسانەیا یونانێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Athenian");'>Athenian </span>(ئاکنجییێن ئەسینا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Athens");'>Athens </span>ئەسینا ( پایتەختێ یونان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Atlantic");'>Atlantic </span>(ئۆقیانوسێ ئەتڵەسی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Atlantis");'>Atlantis</span> (گزیرتەکا ئەفسانەی یە کو دبێژن ل دەریایا ئەتڵەسیدابی و یا نقوم بی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Australian");'>Australian</span> ئوستوڕالی ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Austrain");'>Austrain</span> نەمساوی ( گەل، زمان، کلتور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aztec");'>Aztec </span>(ئازتیک: ملەتەکە حوکمرانیا ل مەکسیک کری)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Apple");'>Apple </span>( سێڤ ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Artist");'>Artist </span>( هونەرمەند )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Astronaut");'>Astronaut</span> ( زەلامێ گەردونی ، ئەسمانگەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Apricot");'>Apricot </span>( مشمژە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Avocado");'>Avocado </span>( ئەڤۆکادۆ : جۆرە فێقیەکێ ئەمریکییە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Adorable");'>Adorable </span>( خوشتڤی : تشتەکەێ ژ هەژی خوشویستنێ یە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aggressive");'>Aggressive </span>( شەڕۆکی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Alert");'>Alert </span>( ب ئاگە ، هشیار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Amazing");'>Amazing</span> ( سەرنج ڕاکێش )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Annoying");'>Annoying</span> ( ئیزعاج کەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Airport");'>Airport </span>( فرۆکەخانە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'>Aquarium </span>( حەوزا ماسیا ، پێشانگەها زیندەوەرێن ئاڤی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Air Mattress");'>Air Mattress</span> ( دوشەکێن هەوایی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Armchair");'>Armchair </span>( کورسیکا ملدار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Academic");'>Academic </span>( پەروەردەیی ، ئەکادیمی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Access");'>Access</span> ( رێک ، گەهشتن ب )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Accommodation");'>Accommodation</span> ( جهێ ئاکنجی کرنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Article");'>Article </span>( پارچە ، ئامراز ، مەقالە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Assignment");'>Assignment </span>( دانان ، دیاریکرن ، ئەرکێ سەرملا ، کاروبار ، کارێ دەنگوباس کومکرنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Accurate");'>Accurate </span>( تەمام ، درست ، دەقیق )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Analyse");'>Analyse </span>( شروڤەکرن ، ڵێکۆڵین)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Attachment");'>Attachment </span>( پێڤەنساندن ، پێڤەگرێدان ، هوگری ، دوستاتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Ability");'>Ability </span>( شیان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Address");'>Address </span>( ناڤ و نیشان ، عنوان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Applicable");'>Applicable </span>( گونجاو ، کارپێکری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Applicant");'>Applicant </span>( داخازی ، داخازی بۆ شولی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Application");'>Application </span>( کارپێکرن ، جێبەجێکرن ، داخازیکرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Apply");'>Apply </span>( جێبەجێکرن ، داخازکرن ب نڤێسین ، ب کارئینان ، دەست لێدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Appropriate");'>Appropriate </span>( هەژی ، مناسب ، باش ، دروست ، تەرخاندکەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+
+        <!-- NOTE:                        ( B )              -->
+
+        <li class="Word"><span onclick='responsiveVoice.speak("bat");'>bat</span> ( چەکچەکیلە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("bee");'>bee </span> ( مێش هنگڤین ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("bird");'>bird</span> ( بالندە، پەلەوەر ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Banana");'>Banana</span> ( مۆز ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bell Peppers");'>Bell Peppers</span> ( فلفل ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bread");'>Bread</span> ( نان ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Broccoli");'>Broccoli</span> ( جۆرەکێ قەڕنەبیتێ یە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Baker");'>Baker</span> ( نانپێژ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Banging");'>Banging </span>( حێل دەست وەشاندن ، پەقین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Blackberries");'>Blackberries </span>( تووتڕک ، دەحلە دری)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Blueberries");'>Blueberries</span> ( فیقیەکێ بچیکێ رەنگ شینەکەیە سەر ب گروپێ تیا ڤەیە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bacon");'>Bacon</span> ( گوشتێ پشتا بەرازا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bagel");'>Bagel </span>( نانەکێ بچیکێ سورکرییە و نیڤەکا وێ یا کونە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Boiled Egg ");'>Boiled Egg </span>( هێکا کەلاندی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Butter");'>Butter </span>( نیڤشک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Basic");'>Basic </span>( بناغەیی ، بنەڕەتی ، سەرەتای)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Big");'>Big </span>( مەزن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bright");'>Bright </span>( روناهی ، تەیسین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Busy");'>Busy </span>( مشغول ، ب شول )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Beach Bag");'>Beach Bag </span>( چانتێ لسەر لێڤا دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Beach Ball");'>Beach Ball </span>( تەپا لسەر لێڤا دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Beach");'>Beach </span>( رەخێ دەریای ، کەنارێ دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Blinds");'>Blinds </span>( جورەکێ پەردایە وەکی سلایدا بو خارێ و بو سەری دهێت و دچیت)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bookshelf");'>Bookshelf </span>( رەفکێن پەڕتووکان ، مەکتەب )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bursar");'>Bursar </span> ( ژمێریار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Behaviour");'>Behaviour</span> ( رەوشت ، سلوک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Best");'>Best </span>( ب باشترین شێوە ، باشترین تشت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Block capital");'>Block capital </span>( پیتێن مەزن یێن سادە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Bursar");'></li>
+
+        <!-- NOTE:                        ( C )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("cat");'>cat</span> ( پشیک ، کتک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("chimpanzee");'>chimpanzee</span> ( شمپانزی : جورەکێ مەیمینکایە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("cow");'>cow</span> ( چێل ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("crocodile");'>crocodile</span> ( تیمساح ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cake");'>Cake</span> ( کێک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Candy");'>Candy </span>( شرینی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Carrot");'>Carrot</span> ( گێزەر ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Celery");'>Celery</span> ( کەرەفس ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cheese");'>Cheese </span>( پەنیر ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Chocolate");'>Chocolate </span>( چکلێت ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cookie");'>Cookie </span>( بەقسەم ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cucumber");'>Cucumber</span> ( خیار ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Chef");'>Chef </span>( سەرۆکێ تەباخچیا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Computer Programmer");'>Computer Programmer </span>( مبەرمجێ کومپیوتەری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Construction Worker");'>Construction Worker </span>( کرێکارێ بیناسازی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Carrying");'>Carrying </span>( هەڵگرتن ، ڤەگوهاستن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Catching");'>Catching </span>( گرتن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("cooking");'>cooking </span>( تایبەتە ب خارن لێنانێ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Calf");'>Calf </span>( گولک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Chicks");'>Chicks </span>( چیچەلوک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cow");'>Cow</span> ( چێل )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cantaloupe");'>Cantaloupe </span>( گندور )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cherries");'>Cherries </span>( گێلاس )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Coconut");'>Coconut </span>( گیزا هندێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cereal");'>Cereal </span>( دانەوێلە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Coffee");'>Coffee </span>( قەهوە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Clean");'>Clean </span>( پاقژکرنەڤە ، پاقژ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Comfortable");'>Comfortable</span> ( ڕحەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Complex");'>Complex </span>( ئاڵۆز )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cool");'>Cool </span>( سار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Chipmunk");'>Chipmunk </span>( سڤورە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cathedral");'>Cathedral</span> ( کەنیساکە مەزن : تایبەتە ب دینێ فەلاڤە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cemetery");'>Cemetery </span>( گۆڕستان ، موقبەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Church");'>Church </span>( کەنیسە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("City Hall");'>City Hall </span>( باژرڤانی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("City");'>City </span>( باژێر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Concert Hall ");'>Concert Hall </span>( کونسێرتخانە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Courtroom");'>Courtroom </span>( هۆلا دادگەهێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cooler");'>Cooler</span> ( سارکەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Crab");'>Crab </span>( کێڤژالە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Clock");'>Clock </span>( دەمژمێرا دیواری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Coffee Table");'>Coffee Table </span>( مێزێن بچیک : ئەو مێزێن ددانە لبەر مێهڤانا و تشتان بو دانە سەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Curtain");'>Curtain </span>( پەردە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cushion");'>Cushion</span> ( بالیڤک ، کوشێن لسەر قەنەپا بۆ پاڵ پێڤەنانێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Campus");'>Campus</span> ( سنورێ زانکۆیێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Contribute");'>Contribute</span>( هەڤبەشی کرن ، بەخشین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Creche");'>Creche</span>( داینگەه ، حزانە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Certificate");'>Certificate</span> ( باوەڕنامە ، بەڵگەنامە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("College");'>College</span>( زانکۆ ، کۆلێژ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Compulsory");'>Compulsory </span>( ب زۆڕی ، نەچاری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Cram");'>Cram </span>( تژیکرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Curriculum");'>Curriculum </span>( بەرنامە ، بەرنامەیێ وانەگوتنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Collect");'>Collect </span>( کۆمکرنەڤە ، کۆمبینەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Complete");'>Complete </span>( تمامکرن ، دوماهیک پێ هاتن ، تژیکرنەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Contents");'>Contents </span>( ناڤەروک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Creche");'></li>
+
+
+        <!-- NOTE:                        ( D )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("dog");'>dog</span> ( سە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("dolphin");'>dolphin</span> ( دۆلفین ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("duck");'>duck</span> ( سوونە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Detective");'>Detective</span> ( پۆلیسێ پشکنەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Doctor");'>Doctor</span> ( نوژدار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Driving");'>Driving </span>( هاژوتنا ترومبێلێ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Donkey");'>Donkey</span> ( کەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Duckling");'>Duckling</span> ( تێشکیت سوونا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dragon fruit");'>Dragon fruit</span> ( فێقیێ دراگون : ژ ناڤدا یێ سپی و خالێن رەش یێن هەین)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Donut");'>Donut </span>( دۆنات )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dark");'>Dark</span> ( تاری ، ڕەش پیست )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Delicious");'>Delicious</span> ( ب تام ، خۆش )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dirty");'>Dirty </span>( کرێت ، پیس )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dry");'>Dry </span>( هشک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Daycare");'>Daycare</span> ( جهێ چاڤدێریکرنا زاڕوکان ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Deck Chairs");'>Deck Chairs </span>( کورسیێن بەر لێڤا دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Diving Mask");'>Diving Mask </span>( ماسکێ مالەڤانی کرنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("DVD Player");'>DVD Player </span>( ئامیرەکە دشێت ب رێکا دەنگی و ڤیدیۆ تشتان پیشان بدەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Deadline");'>Deadline </span>( دوماهیک مۆڵەت ، دوماهیک سوز )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dean");'>Dean </span>( ڕاگرێ کۆلیژێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Degree");'>Degree </span>( پلە ، دەرەجە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Domain");'>Domain</span> ( بوارێ بیرکرنەڤێ و چالاکیێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Data");'>Data </span>( زانیاری، راستی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Degree");'>Degree </span>( پلە ، دەرەجە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dictionary");'>Dictionary </span>( فەرهەنک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Dormitory");'>Dormitory </span>( ژورا نفستنێ یا بەشێ نافخویی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Drop");'>Drop </span>( کەفتنە خار ، هاتنە خار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Date of Birth");'>Date of Birth </span>( مێژوویا ژدایک بونێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Delete");'>Delete </span>( ژێبرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Detail");'>Detail </span>( درێژەپێدان ، دەستنیشانکرن ، هەڵبژارتن)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( E )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("elephant");'>elephant</span> ( فیل ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Electrician");'>Electrician</span> ( کارەبا چی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Efficiently");'>Efficiently </span>( لێهاتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Experiment");'>Experiment </span>( تاقیکرنەڤە ، ئەزموون )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Extracurricular");'>Extracurricular </span>( ژ دەرڤەی بوارێ خاندنێ ل قوتابخانێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Examination");'>Examination</span> ( تاقیکرنەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Edit");'>Edit </span> ( دەستکاری کرن ، سەربەستبین)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Employment");'>Employment </span> ( شول ، خزمەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Experience");'>Experience </span> ( دنیا دیتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( F )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Ferret");'>Ferret </span>( گیانەوەرەکە نێچیرا کێڤریشکا دکەت ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fish");'>Fish </span>( ماسی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fox");'>Fox </span>( ڕیڤی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fruits");'>Fruits </span>( فێقی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Firefighter");'>Firefighter</span> ( کارمەندێ ئاگر ڤەمراندنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Flight attendant");'>Flight attendant </span>( خزمەتکار ێ/ا فروکێ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Florist");'>Florist </span>( گۆل فرۆش)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Flying");'>Flying </span>( فڕین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Folding");'>Folding </span>( پێچان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Foal");'>Foal </span>( ماهین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fruit Salad");'>Fruit Salad</span> ( زەلاتەیا فێقی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Feathery");'>Feathery </span>( گیانەرێن پەری ، سڤک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fit");'>Fit </span>( گونجاو ، رێک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Farm");'>Farm </span>( گێلگەه ، مەزرەعە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fire Station");'>Fire Station </span>( وێستگەها ئاگرڤەمراندنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Flip Flops");'>Flip Flops </span>( نەعالێن ب تبلک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Flippers");'>Flippers </span>( پێلاڤێن مەلەڤانی کرنێ : د درێژن و هاریکارن بۆ بلەز چوونێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fireplace");'>Fireplace </span>( سوپا دارا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Flower");'>Flower </span>( گۆڵ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Footstool");'>Footstool </span>( جورەکێ مێزێن بچیکە بو دانان پێیان لسەر دهێتە بکارئینان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Faculty");'>Faculty </span>( شیان ، کۆلێژ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fee");'>Fee </span>( دەست حەق ، کرێ ، تێ چوون ، خەرج )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Field");'>Field </span>( دەشت ، زەڤی ، گێڵگەه )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Fresher");'>Fresher</span> ( تشتەکێ نی ، تازەتر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Form");'>Form </span>( شێوە ، جۆر ، فۆرم )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Full");'>Full </span>( تژی ، پر ، تەمام )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+        <!-- NOTE:                        ( G )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("giraffe");'>Giraffe </span>( زەڕافە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("gorilla");'>Gorilla </span>( گۆرێلا ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("grasshopper");'>Grasshopper </span>( کولی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Grapes");'>Grapes </span>( تری ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Goat");'>Goat </span>( بزن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Goose");'>Goose</span> ( قاز )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Grapefruit");'>Grapefruit</span> ( سندی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Golf Course");'>Golf Course </span>( یاریگەها گولفێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Goggles");'>Goggles </span>( بەرچافکێن پاراستنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Graduate");'>Graduate </span>( دەرچوویێ زانکۆیێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( H )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("horse");'>Horse</span> ( هەسپ ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hen");'>Hen </span>( مریشک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hilarious");'>Hilarious </span>( شادمان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hedgehog");'>Hedgehog </span>( ژڤژی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hyena");'>Hyena </span>( حەفتیار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hospital");'>Hospital </span>( نەخوشخانە ، خەستە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hall of residence");'>Hall of residence </span>( هوڵا ئاکنجی بونێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Head");'>Head </span>( سەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Heading");'>Heading </span>( ناڤونیشان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Hobby");'>Hobby</span> ( حەز ، هیڤی ، هیوایەت ، سەر گەرمی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( I )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Ice Skating Rink");'>Ice Skating Rink</span> ( یاریگەها خو خلیساندنا سەر بەفرێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Ice Cream ");'>Ice Cream </span>( دۆندرمە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("In charge");'>In charge </span>( بەرپرس ، مەسئولە ب تشتەکێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Internet");'>Internet </span>( چوون بۆ ناڤ تۆڕا ئەنتەرنێتێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Interest");'>Interest </span>( مفا ، خێر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( J )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Janitor");'>Janitor </span>( دەرگەڤان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Judge");'>Judge </span>( دادوەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Jogging");'>Jogging </span>( بلەز چوون ، بەزین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Jam");'>Jam </span>( مرەبا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( K )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("kangaroo");'>Kangaroo </span>( کەنغەر ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Kiwi");'>Kiwi </span>( کیڤی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Kite");'>Kite </span>( فروکا کاغەزێ : جورەکێ فروکایە بەنکەکێ درێژ پێڤەیە و دهێتە بلندکرن بۆ ئەسمانی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Keep");'>Keep </span>( پاراستن ، بەردەوام بین ، خودان کرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Kindergarten");'>Kindergarten </span>( باخچێ ساڤایا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( L )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("ladybug");'>Ladybug </span>( خالخالوک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("lion");'>Lion </span>( شێر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("lizard");'>Lizard </span>( چەپچەپیسک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lemon");'>Lemon </span>( لەیمۆن، لیمۆک ، حامز ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Licking");'>Licking </span>( لێدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lamb");'>Lamb </span>( بەرخ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lime");'>Lime </span>( جورە لیموکەکا ترشە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Library");'>Library </span>( پەڕتووکخانە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Life Jacket ");'>Life Jacket </span>( چاکیتێ رزگارکەرێ ئاڤێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lifesaver");'>Lifesaver </span>( چوپێ رزگارکەرێ ئاڤێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lamp");'>Lamp </span>( گڵۆپ ، لەمپە، چرا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Living Room ");'>Living Room </span>( ژوورا رینشتنێ ، کوچک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lecture");'>Lecture </span>( وانە ، وتار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Librarian");'>Librarian </span>( خودان پەرتووکخانە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Look Up");'>Look Up </span>( پەیداکرن ، سەحکرن ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Link");'>Link </span>( وەسلە ، پەیوەندی ، گرێدان ، پێکڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Last");'>Last </span>( تازاترین ، نیترین ، دوماهی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Level");'>Level </span>( ڕێک ، راست ، ئاست)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Lower case");'>Lower case </span>( پیتێن بچیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( M )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("monkey");'>Monkey </span>( مەیمینک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("mosquito");'>Mosquito </span>( پێشک، مێشک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Milk");'>Milk </span>( شیر : ڤەخارنەکا سپی یە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mushroom");'>Mushroom </span>( کڤارک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mechanic");'>Mechanic </span>( میکانیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Musician");'>Musician </span>( میۆزیکژەن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mango");'>Mango </span>( مانگو : جوورە فیقیەکێ هندییە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Marmot");'>Marmot </span>( مارمێت : ئەڤە ژ قورسترین ئەندامێن خێزانا سڤورانە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mansion");'>Mansion </span>( کۆشک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mosque");'>Mosque </span>( مزگەفت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Magazines");'>Magazines </span>( گۆڤار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Manage");'> Manage</span> ( ب رێڤەبرن ، بەردەوام بین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mark");'>Mark </span>( نیشانکرن ، نمرە دانان ، ئاماژەکرن)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Mixed");'>Mixed </span>( تێکەل ژ چەند تشتەکا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Membership");'>Membership </span>( ئەندامیاتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( N )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Nuts");'>Nuts </span>( چەرەزات ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Nurse");'>Nurse </span>( بڕین پێچ ، سستر)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Newspaper");'>Newspaper</span> ( رۆژنامە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Nursery");'>Nursery </span>( داینگەه ، رەوزە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( O )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("orangutan");'>Orangutan </span>( ئورانگوتان : جورەکێ مەیمینکا ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Orange");'>Orange</span> ( پرتەقال ، رەنگێ پرتەقالی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Opening");'>Opening </span>( ڤەکرنەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Omelet");'>Omelet </span>( هێلکە رین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Orange juice");'>Orange juice </span>( شەربەتا پرتەقالێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Otter");'>Otter </span>( سەیێ دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Opinion");'>Opinion </span>( هزروبیر ، بیرو بوچوون)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Out");'>Out </span>( دەرێ ، ل دەرێ ، دەرڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Organize");'>Organize </span>( رێکخستن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( P )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Peas");'>Peas </span>( بەزالیا ، لوپک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pie");'>Pie </span>( کولێرا بگوشت ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pineapple");'>Pineapple </span>( ئەنەناس ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pizza");'>Pizza </span>( پیتزا ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Potatoes");'>Potatoes </span>( پتات ، کرتوپ ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Painter");'>Painter </span>( بۆیاخ چی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pilot");'>Pilot </span>( فرۆکەڤان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Plumber");'>Plumber </span>( بۆری چی ، هوستایێ بۆری یا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Police Officer");'>Police Officer</span> ( پۆلیس)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Postal Worker");'>Postal Worker</span> ( کارمەندێ پوستەیا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pushing");'>Pushing </span>( پاڵدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pig");'>Pig </span>( بەراز )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pony");'>Pony </span>( هەسپێ بچیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Papaya");'>Papaya </span>( رووەکێ پاپایا)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Peach");'>Peach </span>( خۆخ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pear");'>Pear </span>( هرمیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Plum");'>Plum </span>( حلیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pancake");'>Pancake</span> ( پانکەیک )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Peanut butter");'>Peanut butter</span> ( نیڤشکێ باقلکێن سودانی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Porcupine");'>Porcupine </span>( گیانەوەرێ بەرهەیوان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Post Office");'>Post Office </span>( نڤیسینگەها پوستا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pail");'>Pail </span>( سەتڵ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Plam Trees");'>Plam Trees </span>( دارا خورمێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Painting");'>Painting </span>( وێنەکرن ، وێنە، کەڤاڵ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Potted Plant ");'>Potted Plant </span>( ئەو رووەکێن دناڤ قافکان دا دهێنە چاندن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Participation");'>Participation </span>( بەشداری کرن ، مشاركه )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Professor");'>Professor</span> ( مامۆستایێ زانکۆیێ ، پرۆفیسۆر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Projector");'>Projector </span>( نیشاندەر ، پرۆجێکتەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Password");'>Password </span>( پەیڤا نهێنی، ڤەشارتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Paste");'>Paste </span>( هەڤیر ، پێکڤەنساندن ، پێڤەنسییای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Permission");'>Permission </span>( یارمەتی ، رێپێدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Plagiarize");'>Plagiarize </span>( دزینا رامانێ ژ کەسەکێ دی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Portal");'>Portal </span>( دەرگەه ، دەروک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Program");'>Program </span>( بەرنامە ، پروگرام )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Primary");'>Primary </span>( سەرەکی ، بنەرەتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Punishment");'>Punishment </span>( سزا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Pupil");'>Pupil </span>( فێرخاز ، بیبیکا چاڤی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Paragraph");'>Paragraph </span>( برگە ، بەند )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Participate");'>Participate </span>( بەشداری کرن ، هەڤبەشی کرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Print");'>Print </span>( نڤیس بو چاپێ ، شین پێ ، تابیعە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Punctuation");'>Punctuation </span>( خاڵبەندی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( Q )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Qualification");'>Qualification </span>( بروانامە ، لێ هاتن ، شیان ، مەرج ، سنور)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+        <!-- NOTE:                        ( R )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("rabbit");'>Rabbit </span>( کێڤریشک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("rhinoceros");'>Rhinoceros </span>( کەرکەدان ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Raisins");'>Raisins </span>( کشمش ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Riding");'>Riding </span>( سیاربین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Rooster");'>Rooster </span>( دیکڵ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("raspberries");'>Raspberries </span>( تی سورک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Raccoon");'>Raccoon </span>( ڕاکۆن : گیانەوەرەکێ باکورێ ئەمریکایە و ژ شیردەر و گۆشت خۆرایە)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Rat");'>Rat</span> ( جرج )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Remote Control");'>Remote Control </span>( جیهاز )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Rocking Chair");'>Rocking Chair </span>( جورەکێ کورسیکانە بنێ وێ د قەوسن و دهێتە هەژاندن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Rug");'>Rug</span> ( مەحفیر ، فەرش )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Research");'>Research</span> ( توێژینەڤە ، ڤەکولین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Resource Centre");'>Resource Centre </span>( ناڤەندا ژێدەران ، سەنتەری سەرچاوەکان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Responsible");'>Responsible </span>( بەرپرس ، مەسول )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Record");'>Record </span>( تۆمار ، تۆمارکرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Relax");'>Relax </span>( ئارام کرنەڤە ، خاڤ کرنەڤە ، بێهنڤەدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Remind");'>Remind </span>( بیرئێخستنەڤە ، بیرئینان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Respect");'>Respect </span>( رێز ، هویری ، ئیحتیرام)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Residential");'>Residential </span>( ئاکنجی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Reward");'>Reward </span>( خەلات )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Referee");'>Referee </span>( دادڤانێ یاریێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Require");'>Require</span> ( پێدڤیبین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Rewrite");'>Rewrite </span>( نڤێسینەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( S )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("sheep");'>Sheep</span> ( پەز ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("skunk");'>Skunk </span>( گیانەوەرەکێ ئەمریکییە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("snake");'>Snake </span>( مار ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("spider");'>Spider </span>( تەڤن پیرک ، داپیروشک ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("squirrel");'>Squirrel </span>( سڤۆرە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Salad");'>Salad </span>( زڵاتە ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Spinach");'>Spinach </span>( سپیناخ ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Strawberry");'>Strawberry </span>( شلێگ ، فڕاوڵا ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Scientist");'>Scientist </span>( زانا ، عالم )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Shaking");'>Shaking </span>( 🤝لەرزین ، چوونا دەستی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Singing");'>Singing </span>( ستران گوتن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Smelling");'>Smelling </span>( بێنکرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Stacking");'>Stacking </span>( کومکرنەڤە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Swimming");'>Swimming </span>( مەلەڤانی کرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sausage");'>Sausage </span>( گوشتێ سوساج : گوشتەکێ تێکەلکرییە ژ ئەگەرێ ئالاڤەکێ وەکی بوریان لێدکەت)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Scrambled Eggs");'>Scrambled Eggs </span>( هێلکا تێکڤەدای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Smoothie");'>Smoothie </span>( نەرم )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Seal");'>Seal </span>( سەیێ ئاڤی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sloth");'>Sloth </span>( کسلان ، نەزیخ ، جورەکێ گیانەوەرایە بارا پتریا ژیانا وان سەرو شنیف لسەر دارا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Seaport");'>Seaport </span>( بەندەرێ دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Skyscraper");'>Skyscraper </span>( ئاڤاهیێن بەرئەسمانی ، تەلارێن بلند )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Stadium");'>Stadium </span>( یاریگەە ، مەلعەب )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Synagogue");'>Synagogue </span>( دێرا جوهی یا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sand");'>Sand </span>( خیز ، رەمل )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sandals");'>Sandals </span>( سەندەل ، پێلاڤا هاڤینێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sandcastle");'>Sandcastle </span>( کەلها خیزی : ئەو جوری کەلها ئەوێن ل سەر لێڤا دەریای دهێنە دروست کرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Seashells");'>Seashells </span>( بەرگ و تیفکلێن دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Shovel");'>Shovel </span>( بێرک ، مەربێل )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Starfish");'>Starfish </span>( ستێرا دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Straw hat");'>Straw hat </span>( کلاڤێن قەرەمی : ئەو جورێ کلاڤێن شێوەکێ بازنە هەیە و رەخێن وێ د درێژن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sunglasses");'>Sunglasses </span>( بەرچافکا دژی هەتاڤێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sunscreen");'>Sunscreen </span>( ملحەما دژی روژێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Swimsuit");'>Swimsuit </span>( جلوبەرگێن سەرئاڤێ ، جلوبەرگێن مەلەڤانیکرنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sofa");'>Sofa </span>( قەنەپە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Speakers");'>Speakers </span>( دەنگ بلندکەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Statue");'>Statue </span>( پەیکەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Schedule");'>Schedule </span>( بەرنامە ، خشتێ کاری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Semester");'>Semester </span>( وەرزێ خواندنێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Socialize");'>Socialize </span>( چێدکەت ، ب سەربرنا دەمێ خۆ دگەل خەلکی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Staff");'>Staff </span>( ستاف ، کارمەند )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Students Union ");'>Students Union </span>( ئێکەتیا قوتابیان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Search engine");'>Search engine</span> ( گەریان بدیڤ زانیاریێن دیارکری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sensibly");'>Sensibly </span>( عاقل ، هشیار )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Source");'>Source </span>( ژێدەر )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Subheading");'>Subheading </span>( بناڤکرن ، سەردێرا دوویێ - پلا دوویێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Secondary");'>Secondary </span>( لاوەکی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Set");'>Set </span>( دەستک ، کۆمەڵە ، دانان ، ئێخستنەسەر ، کرن ، ئالاڤ ، مەجموعە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Sit");'>Sit </span>( رینشتن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Stay on ");'>Stay on </span>( ب راوەستن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Select");'>Select ( هەلبژارتن ، دەستنیشان کرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Space");'>Space ( ڤاڵاهی ، بۆشایی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Statement");'>Statement ( گوتن ، ئاخفتن ، ڕاپۆرت ، لیستا بانکێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Status");'>Status ( بارێ کۆمەڵایەتی ، ئاستێ کۆمەڵایەتی ، بارێ هەڤژینیێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Subject");'>Subject ( بابەت ، بکەر ، کەس )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Surname");'>Surname ( نازناڤ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( T )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Teacher");'>Teacher</span> ( مامۆستا ، سەیدا ، فێرکەر)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Truck Driver");'>Truck Driver </span>( شوفێرێ بارهەڵگرێ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Tickling");'>Tickling </span>( ل دەمێ کەسەک بنێ پێ کەسەکێ د خرینیت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Turkey");'>Turkey </span>( عەلوک)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Tomato");'>Tomato </span>( باجان ، تەماتە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Tea");'>Tea </span>( چا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Toast");'>Toast </span>( نانێ بژارته )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Temple");'>Temple </span>( پەرستگەه )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Theater");'>Theater </span>( شانو ، نمایشگەه )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Town Houses");'>Town Houses </span>( خانیێن باژێرا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Train Station");'>Train Station </span>( وێستگەها شەمەندەفرا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Towel");'>Towel</span> ( خالیک ، خاولی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Table lamp");'>Table lamp</span> ( گڵۆپێن لسەر مێزێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Television");'>Television </span>( تەلەڤزیۆن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Tutorial");'>Tutorial </span>( وانا تایبەت ب چەند فێرخازا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Topic");'>Topic </span>( بابەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Take");'>Take </span>( دانان ، ئینان، برن، وەرگرتن، ڤییان، خارن ،نڤیسین ، گرتن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Tertiary");'>Tertiary</span> ( سێیەم ، پلا سێ یێ ، ناڤنجی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Treat");'>Treat </span>( رەفتار ، معاملە ل گەڵ کرن ، چارە سەرکرن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( U )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("University");'>University </span>( کۆلێژ ، زانکۆ)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Umbrella");'>Umbrella </span>( شەمسی)</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Undergraduate");'>Undergraduate </span>( قوتابیێ زانکۆیێ )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+
+        <!-- NOTE:                        ( V )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Vegetables");'>Vegetables </span>( رووەک ، گیا ، کەسکاتی ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Veterinarian");'>Veterinarian </span>( ڤێتێرنەری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Vase");'>Vase </span>( قافکێن گوڵان ، گوڵدان )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Vice chancellor");'>Vice chancellor </span>( جێگرێ سەروک وەزیری )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Virus");'>Virus </span>( ڤایرۆس )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( W )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("whale");'>Whale</span> ( نەهنگ ، حیت ) </li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Watermelon");'>Watermelon</span> ( شمتی ، شتی ، زەبەش )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Waiter");'>Waiter </span>( بەردەست ، گارسۆن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Washing");'>Washing </span>( شوشتن )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Writing");'>Writing </span>( نڤیسین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Waffles");'>Waffles </span>( وافل )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Waves");'>Waves </span>( پێلێن دەریای )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Webpage");'>Webpage </span>( لاپەڕا وێبسایتی )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Website");'>Website </span>( وێبسایت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Wireless");'>Wireless </span>( بێ تێل ، بێی وایرە )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Worst");'>Worst </span>( خراپ ترین )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+        <!-- NOTE:                        ( X )              -->
+
+        <!-- NOTE:                        ( Y )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("Yogurt");'>Yogurt</span> ( ماست )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+        <!-- NOTE:                        ( Z )              -->
+        <li class="Word"><span onclick='responsiveVoice.speak("zebra");'>Zebra </span>( کەرێ کیڤی ، کەرێ خەت خەت )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Zoo");'>Zoo </span>( باخچێ گیانەوەرا )</li>
+        <li class="Word"><span onclick='responsiveVoice.speak("Aquarium");'></li>
+
+
+
+
+      </div>
+
+    </div>
+
+  </center>
+
+  <!-- linking javascript -->
+  <script src="./animals.js"></script>
+
+</body>
+
+</html>
