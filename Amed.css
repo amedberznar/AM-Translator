@@ -1,0 +1,52 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #F2EBE9;
+}
+
+button{
+  font-size: 40px;
+  border-radius: 20px;
+}
+
+.Background{
+  margin-top: 40px;
+  width: 80%;
+  height: 890px;
+  background: #293462;
+  border-radius: 30px;
+}
+
+h1{
+  padding-top: 20px;
+  color: #c5c5d1;
+  font-style: oblique;
+  font-size: 38px;
+  line-height: 1.8;
+}
+
+img{
+  width: 250px;
+  border-radius: 20px;
+}
+
+.Social-img{
+  width: 50px;
+  background: #F2EBE9;
+  margin-top: 50px;
+  padding: 10px 40px 10px 40px;
+}
+
+h2{
+  padding: 5px 0px 5px 0px;
+  font-size: 30px;
+  color: #293462;
+  background: #F2EBE9;
+}
+
+
+
+.Back{
+  margin-left: 10px;
+  width: 80px;
+}
